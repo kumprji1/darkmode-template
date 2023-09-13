@@ -1,0 +1,39 @@
+.heroesList {
+    color: white;
+    border-radius: 5px;
+    background-color: #cdcdcd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heroItem {
+    margin: 1rem;
+    background-color: #b2b2b2;
+    border-radius: 5px;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 0px 16px -8px #ccc;
+    }
+
+    .heroPhoto--wrapper {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 100%;
+        max-height: 150px;
+        overflow: hidden;
+    }
+    .heroPhoto--wrapper img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .heroName {
+        margin: 1rem;
+    }
+}
